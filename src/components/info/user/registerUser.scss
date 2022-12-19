@@ -1,0 +1,252 @@
+.register_header {
+    width: 100%;
+    background: #fff;
+    &--content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+        &--img {
+            width: 60px;
+            border-radius: 10%
+        };
+        &--text {
+            color: #004ecb;
+            font-weight: 800;
+            font-size: 30px;
+            margin:10px  ;
+        };
+    };
+};
+.register_container {
+    width: 100%;
+    height: 660px;
+    background:#e3f2fd;
+    display: flex;
+    &--wrap {
+        position: relative;
+        &--may1{
+            position: absolute;
+            top: 0;
+            right: 150px;
+            height: 130px;
+            width: 130px;
+        };
+        &--may2 {
+            position: absolute;
+            top: 360px;
+            right: 270px;
+            height: 170px;
+            width: 170px;
+        };
+        &--may3 {
+            position: absolute;
+            top: 50px;
+            right: 180px;
+            &--img {
+                width: 350px
+            };
+            &--text {
+                margin: 0;
+                position: relative;
+                bottom: 150px;
+                left: 50px;
+                font-size: 30px;
+                font-weight: 800;
+                color: #81d4fa;
+            };
+        };
+        &--may5 {
+            position: absolute;
+            top: 400px;
+            right: 100px;
+            width: 250px; 
+            height: 250px;
+        };
+    };
+    &--background {
+        background-image: url('../../../assest/imager/book4.png');
+        background-repeat: no-repeat;
+        background-size: 850px;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        &--email {
+            width: 270px;
+            position: absolute;
+            bottom: 495px;
+            left: 450px;
+            border-bottom: 3px solid #bdbdbd;
+            input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                padding: 0 0 0 16px;
+                font-size: 18px;
+            };
+            input:focus {
+                outline: none;
+            }
+            input:not(:placeholder-shown) + &--text,
+            input:focus + &--text {
+                top: -28px;
+                left: 7px;
+                color: #0d47a1;
+                background-color:#ffff00;
+                padding: 3px 8px;
+                border-radius: 10px;
+                font-size: 13px;
+            };
+            &--text {
+                position: absolute;
+                left: 16px;
+                top: 0;
+                user-select: none;
+                pointer-events: none;
+            };
+            &--error {
+                position: absolute;
+                top: 20px;
+                left: 16px;
+                font-size: 17px;
+                color: #c30000;
+            };
+        };
+        &--password {
+            width: 270px;
+            position: absolute;
+            bottom: 400px;
+            left: 450px;
+            border-bottom: 3px solid #bdbdbd;
+            input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                padding: 0 0 0 16px;
+                font-size: 18px;
+            };
+            input:focus {
+                outline: none;
+            }
+            input:not(:placeholder-shown) + &--text,
+            input:focus + &--text {
+                top: -28px;
+                left: 7px;
+                color: #0d47a1;
+                background-color:#ffff00;
+                padding: 3px 8px;
+                border-radius: 10px;
+                font-size: 13px;
+            };
+            &--text {
+                position: absolute;
+                left: 16px;
+                top: 0;
+                user-select: none;
+                pointer-events: none;
+            };
+            &--error {
+                position: absolute;
+                top: 20px;
+                left: 16px;
+                font-size: 17px;
+                color: #c30000;
+            };
+            &--show {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            };
+        };
+        &--confimPassword {
+            width: 270px;
+            position: absolute;
+            bottom: 305px;
+            left: 450px;
+            border-bottom: 3px solid #bdbdbd;
+            input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                padding: 0 0 0 16px;
+                font-size: 18px;
+            };
+            input:focus {
+                outline: none;
+            }
+            input:not(:placeholder-shown) + &--text,
+            input:focus + &--text {
+                top: -28px;
+                left: 7px;
+                color: #0d47a1;
+                background-color:#ffff00;
+                padding: 3px 8px;
+                border-radius: 10px;
+                font-size: 13px;
+            };
+            &--text {
+                position: absolute;
+                left: 16px;
+                top: 0;
+                user-select: none;
+                pointer-events: none;
+            };
+            &--error {
+                position: absolute;
+                top: 20px;
+                left: 16px;
+                font-size: 17px;
+                color: #c30000;
+            };
+            &--show {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            };
+        };
+        &--button {
+            position: absolute;
+            bottom: 220px;
+            left: 520px;
+            border: none;
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            background: #004ecb;
+            border-radius: 20px;
+            cursor: pointer;
+        };
+        &--button:hover {
+            border: 2px solid #81d4fa;
+            color: #ffff00;
+        }
+        &--footter {
+            width: 200px;
+            height: 200px;
+            background-image: url(../../../assest/imager/may4.png);
+            background-size: 200px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            &--text {
+                position:absolute;
+                top: 50px;
+                left: 24px;
+            };
+            &--login {
+                position: relative;
+                top: 80px;
+                left: 50px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #004ecb;
+                cursor: pointer;
+            }
+        };
+    };
+};
